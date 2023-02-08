@@ -1,0 +1,34 @@
+.logo{
+    display: flex;
+    font-size: 30px;
+}
+
+.logo-img {
+    margin: 2vh;
+    height: 20vh;
+    padding-left: 2vh;
+
+}
+
+p {
+    color: rgb(219, 169, 103);
+    font-size: 3vh;
+    padding: 4vh;
+    font-style: bold;
+}
+
+p:hover{
+    color: rgb(253, 253, 253);
+}
+
+@media (max-width: 800px) {
+    .logo-img{
+        margin: 1vh;
+        height: 15vh;
+        padding-left: 1vh;
+    
+    }
+    p{
+        font-size: 2vh;
+    }
+}
