@@ -28,8 +28,8 @@ function Conteudo(){
            <ConteudoContainer>
                 <Card  titulo="Direito Previdenciário" image={imagem1}/>
                 <Card  titulo="Direito Penal" image={imagem2}/>
-                <Card  titulo="Direito Tributário" image={imagem3} texto="Direito tributario é muito importante"/>
-                <Card  titulo="Direito Civil" image={imagem4} texto="Direito tributario é muito importante"/>            
+                <Card  titulo="Direito Tributário" image={imagem3} />
+                <Card  titulo="Direito Civil" image={imagem4} />            
             </ConteudoContainer>
     )
 }
