@@ -8,7 +8,7 @@ const AppContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: rgb(12, 1, 1); /* For browsers that do not support gradients */
-  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(78, 78, 77));
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(78, 78, 76));
 
 `
 
