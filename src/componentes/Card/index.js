@@ -1,15 +1,15 @@
 import React from 'react';
 import './estilo.css';
-import imagem1 from '../../../public/direito.jpg'
 
-function Card(){
+function Card(props){
     return (
         <div className='card'>
             <div className='card-header'>
-                <p>Direito previdenciario</p>
+                <p>{props.titulo}</p>
             </div>
             <div className='card-body'>
-                <img src={imagem1}></img>
+                <img src={props.image}></img>
+                <p>{props.texto}</p>
             </div>
         </div>
     )
