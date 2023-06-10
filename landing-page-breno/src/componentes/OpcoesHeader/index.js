@@ -1,15 +1,30 @@
 import React from "react";
-import './estilo.css';
+import styled from "styled-components";
+import whatsapp from '../../../public/whatsapp.svg'
+import instagram from '../../../public/instagram.svg'
+import facebook from '../../../public/facebook.svg'
+
+const OpcoesContainer = styled.ul`
+        
+
+`
+const Icone = styled.li`
+    margin-right: 40px;
 
 
-const textoOpcoes = ['Home','Serviços', 'Contato']
+`
+
+
+const icones = [whatsapp, instagram, facebook]
+
+
 function OpcoesHeader(){
     return(
-        <ul className="opcoes">
-            { textoOpcoes.map( (texto) => (
-                <li className="opcao"><p>{texto}</p></li>
-            ))}
-        </ul>
+        <OpcoesContainer>
+             { icones.map( (icone) => (
+                <Icone><img src={icone} alt="icones"></img></Icone>
+            ))}           
+        </OpcoesContainer>
     )
 }
 export default OpcoesHeader;

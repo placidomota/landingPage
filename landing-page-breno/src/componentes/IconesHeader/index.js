@@ -1,18 +1,32 @@
-import instagram from '../../../public/instagran.png';
-import facebook from '../../../public/facebook.png';
-import wathsap from '../../../public/whathsap.png';
-import './estilo.css';
+import styled from 'styled-components';
+import instagram from '../../../public/instagram.svg'
+import wathsap from '../../../public/whatsapp.svg'
 
 
-const icones = [instagram, facebook, wathsap]
+const Icone = styled.li`
+    margin-right: 40px;
+    width: 25px;
+
+`
+
+
+const Icones = styled.ul`
+    display: flex;
+    align-items: center;
+
+`
+
+const icones = [instagram, wathsap]
 
 function IconesHeader(){
     return(
-    <ul className='icones'>
-        <li>
-            <img src={facebook}></img>
-        </li>
-    </ul>
-    )
+    <Icones>
+        {icones.map( (icone) => (
+            <Icone>
+                <img src={icone} alt='icone'></img>
+            </Icone>
+        ))}
+    </Icones>
+    )   
 }
 export default IconesHeader;

@@ -1,14 +1,21 @@
 import React from "react";
-import Conteudo from "./componentes/Conteudo";
 import Header from './componentes/Header'
+import styled from "styled-components";
+import Conteudo from "./componentes/Conteudo";
 
+
+const AppContainer = styled.div`
+  background-color: rgb(12, 1, 1); /* For browsers that do not support gradients */
+  background-image: linear-gradient(90deg, rgb(0, 0, 0), rgb(78, 78, 76));
+`
 
 function App(){
     return(
-      <div className="App">
+      <AppContainer>
         <Header />
         <Conteudo />
-      </div>
+      </AppContainer>
+       
     )
 }
 

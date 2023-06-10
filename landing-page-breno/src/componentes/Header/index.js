@@ -1,15 +1,31 @@
 import React from 'react';
 import Logo from '../Logo';
 import OpcoesHeader from '../OpcoesHeader';
-import './estilo.css'
+import styled from 'styled-components';
 
+
+
+const HeaderContainer =  styled.header`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+
+
+`
 
 function Header() {
     return (
-        <header className='App-Header'>
+       <HeaderContainer>
             <Logo />
             <OpcoesHeader />
-        </header>
+       </HeaderContainer>
+         
+            
     )
 }
 

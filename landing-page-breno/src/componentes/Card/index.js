@@ -1,17 +1,34 @@
 import React from 'react';
-import './estilo.css';
-import imagem1 from '../../../public/direito.jpg'
+import styled from 'styled-components';
 
-function Card(){
+
+const CardContainer = styled.div`
+    display: flex;
+    width: 100vw;
+   
+`
+const CardHeader=styled.div`
+    font-size: 1.5rem;
+    color: rgb(185, 185, 22);
+`
+
+const CardBody=styled.div`
+display: flex;
+flex-direction: column;
+`
+
+function Card(props){
     return (
-        <div className='card'>
-            <div className='card-header'>
-                <p>Direito previdenciario</p>
-            </div>
-            <div className='card-body'>
-                <img src={imagem1}></img>
-            </div>
-        </div>
+        <CardContainer>
+            <CardHeader>
+                <p>{props.titulo}</p>
+            </CardHeader>
+           <CardBody>
+                <img src={props.image}></img>
+                <p>{props.texto}</p>
+           </CardBody>
+        </CardContainer>
+            
     )
 }
 
