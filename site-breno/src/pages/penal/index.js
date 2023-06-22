@@ -12,9 +12,9 @@ export default function Penal(){
         }
     return (
         <div className="w3-center">
-            <Cabecalho />
+            <Cabecalho titulo="Direito Penal" descricao="Direito penal é um ramo do direito que aplica o rigor da lei"/>
             <h1>
-                Direito Penal
+                Conteudo
             </h1>
             <button className="w3-button"
                 

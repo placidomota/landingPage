@@ -1,13 +1,63 @@
-.image {
-  width: 100%;
-  height: 30vh;
+.title,
+.description {
+  color: rgb(237, 195, 117);
+  text-shadow: 1px 1px 0 #444;
 }
 
-.title {
+.texto{
   color: rgb(237, 195, 117);
-  text-shadow:1px 1px 0 #444
+  text-shadow: 1px 1px 0 #444;
 }
-.description {
-  color:rgb(237, 195,117);
-  text-shadow:1px 1px 0 #444;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  height: 15rem;
+
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.heroSection {
+  padding: 16px;
+}
+
+.heroImage {
+  padding: 16px;
+}
+
+.image{
+  transition: transform 0.3s ease;
+}
+.image:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.heroText{
+  color: rgb(246, 194, 96);
+  text-shadow: 1px 1px 0 #444;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+}
+.footerSection{
+  margin-bottom: 16px;
+  color: rgb(246, 194, 96);
+  text-shadow: 1px 1px 0 #444;
+  padding: 16px;
+
+}
+
+.container{
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(9, 9, 9, 0.8)), url('/background-image.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
